@@ -1,0 +1,47 @@
+<div class='block'>
+  <div class='rowElem' ng-repeat='message in $ctrl.blue.doubleList'>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 0, $ctrl.blue)' 
+                  color='blue' 
+                  message='message.left'>                
+    </message-item>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 1, $ctrl.blue)' 
+                  ng-if='!!message.right' 
+                  color='blue' 
+                  message='message.right'>                
+    </message-item>
+  </div>
+</div>
+
+<div class='block'>
+	<div class='rowElem' ng-repeat='message in $ctrl.red.doubleList'>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 0, $ctrl.red)' 
+                  color='red' 
+                  message='message.left'>                
+    </message-item>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 1, $ctrl.red)' 
+                  ng-if='!!message.right' 
+                  color='red' 
+                  message='message.right'>                
+    </message-item>
+  </div>
+</div>
+
+<div class='block'>
+  <div class='rowElem' ng-repeat='message in $ctrl.green.doubleList'>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 0, $ctrl.green)'
+                  color='green'
+                  message='message.left'>
+    </message-item>
+  	<message-item drop-elem 
+                  drop='$ctrl.deleteAndShape($index, 1, $ctrl.green)' 
+                  ng-if='!!message.right' 
+                  color='green' 
+                  message='message.right'>
+    </message-item>
+  </div>
+</div>
